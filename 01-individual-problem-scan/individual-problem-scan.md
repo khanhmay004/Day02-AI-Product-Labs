@@ -12,7 +12,7 @@
 | 4 | Tốn thời gian | HR pipeline tuyển intern AI 4 bước, chấm test tay 60 bài/đợt | HR, CFO, ứng viên | Cycle 30 ngày, ứng viên giỏi mất offer khác |
 | 5 | AI có thể tốt hơn | Mock interview cho sinh viên năm cuối, senior bận | Sinh viên, senior | 1 mock/tuần là cùng, câu hỏi lặp |
 | 6 | AI có thể tốt hơn | Phân loại + score CV ứng viên junior từ pool TopCV | HR | 60 CV/đợt × 5 phút filter tay |
-| 8 | Pain từ người khác | Tìm phòng có ổ cắm + map campus VinUni khi học offline | Học viên mới | 10-15 phút mỗi buổi |
+| 7 | Pain từ người khác | Tìm phòng có ổ cắm + map campus VinUni khi học offline | Học viên mới | 10-15 phút mỗi buổi |
 
 
 ## Top 3

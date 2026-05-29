@@ -236,7 +236,7 @@ Before/after impact:
 
 | Metric | Trước | Sau kỳ vọng | Ghi chú |
 |---|---:|---:|---|
-| Số bước (HV + TA) | 7 | ~4 hữu ích (b2–b5 tự động) | HV chủ yếu thao tác b1 + đọc kết quả |
+| Số bước (HV + TA) | 7 | ~4 hữu ích (CÁC BƯỚC AI tự động) | HV chủ yếu thao tác b1 + đọc kết quả |
 | Tổng thời gian đến khi TA bắt đầu xử lý | 20 phút | Giảm | Cần timestamp trước/sau |
 | Số bước thủ công của TA | 4 (đọc, hỏi lại, nhận bổ sung, phân tích) | 1–2 (chỉ phân tích case khó đã đủ context) | TA hết phải đi "đòi" thông tin |
 | Bottleneck chính | TA hỏi lại nhiều vòng | TA review case khó đã đủ context | Bottleneck dời chứ không biến mất |
