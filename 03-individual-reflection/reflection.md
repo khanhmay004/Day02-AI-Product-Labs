@@ -13,16 +13,9 @@
 - **So sánh tool research**: mình hỏi AI tóm tắt pricing Mendable vs Kapa vs Inkeep — confirm với mình 2 trong 4 tool quá đắt.
 
 ### Chỗ AI sai hoặc hời hợt mà mình phải sửa
-- **Lúc đầu AI đề xuất "build multi-agent system với 3 agent: Q&A, Logistics, Analytics"** — đúng theo painpoint ban đầu của mình, nhưng đó là **solution-first**. Mình đã từng định cho Agent vào Mức chọn ngay lập tức. Sau khi đọc lại b2.pdf phần "Rule không kém Agent nếu giải đúng bài với ít rủi ro hơn", mình bắt mình tự hỏi: cái này có thật sự cần Agent không? Validate xong thấy 80% câu là low-complexity → chọn Workflow chứ không Agent.
+- **Lúc đầu AI đề xuất "build multi-agent system với 3 agent: Q&A, Logistics, Analytics"** — đúng theo painpoint ban đầu của mình, nhưng đó là **solution-first**. Mình đã từng định cho Agent vào Mức chọn ngay lập tức. Sau khi đọc lại slide.pdf phần "Rule không kém Agent nếu giải đúng bài với ít rủi ro hơn", mình bắt mình tự hỏi: cái này có thật sự cần Agent không? Validate xong thấy 80% câu là low-complexity → chọn Workflow chứ không Agent.
 - **AI ban đầu viết Problem Statement v1 quá "đẹp" — như marketing copy**. Mình phải bắt nó cụ thể hơn: actor không phải "TA và học viên", là "4 TA part-time × 10h/tuần / 500 học viên với 3 phân khúc cụ thể". AI giúp khi mình prompt rõ, nhưng nếu không prompt rõ thì nó sẽ viết hời hợt.
-- **AI hứng thú với metric "tăng NPS 25%"** nhưng không tự đề xuất baseline survey instrument. Mình phải tự nhận ra: nếu không có baseline thì target +25% là số rỗng. Đã thêm dòng "Baseline TBD (chưa có instrument)" vào Problem Statement và đề xuất setup survey weekly.
 - **AI generate quá nhiều risk** (10+ risk khi tôi hỏi). Mình phải tự chọn 6 risk quan trọng nhất và viết mitigation cụ thể.
-
-### Mình đã sửa bằng nhận định của bản thân
-- Anchor decision bằng **log Discord thật mình kéo** (312 câu hỏi), không phải reasoning của AI.
-- Chọn Workflow thay vì Agent dù painpoint ban đầu của mình là "multi-agent system" — vì lab này dạy mình **Rule không kém Agent**.
-- Đặt kill criteria mạnh hơn AI suggest (AI nói "nếu auto-resolve < 40%", mình kéo lên 30% — bằng baseline Rule).
-- Quyết định không bundle thêm "auto-grading + weekly performance report" vào pilot dù painpoint gốc của mình có nói — vì sẽ vi phạm boundary và mở scope quá rộng cho lab 4 tiếng.
 
 ---
 
@@ -30,13 +23,11 @@
 
 ### Vai trò chính
 - **Người viết workflow Mermaid** trước/sau (Phase 5a).
+- Tham gia hoàn thành thảo luận
 
-### Mình đã challenge ai trong nhóm.
-
-### Mình đã được challenge và phải sửa
 
 ### Nếu được điểm 0-10 cho contribution của mình, mình tự cho **7.5/10**
-Vì mình đã pitch, kéo data, defend, viết được phần Workflow + Problem Statement. Trừ 2.5 điểm vì: (a) gần để lọt "Agent tier" do bias painpoint ban đầu — Tuấn phải push lại; (b) chưa đi phỏng vấn TA Hùng / Mai trực tiếp, ủy quyền cho Linh — đáng lẽ mình nên đi cùng.
+Vì mình đã pitch, kéo data, defend, viết được phần Workflow + Problem Statement.
 
 ---
 
@@ -53,7 +44,7 @@ Ban đầu mình rất hứng "multi-agent system Q&A + Logistics + Analytics" v
 
 ### Bài học về làm nhóm
 - Challenge **đúng trọng tâm** quan trọng hơn challenge nhiều. Tuấn chỉ hỏi 2 câu nhưng cả 2 đều buộc mình đi kéo data thật.
-- Pitcher không nên defend bằng reasoning, nên defend bằng data. Mình tự nhận lúc đầu suýt defend "tao thấy nó lặp lại nhiều mà" — rất yếu.
+- Pitcher không nên defend bằng reasoning, nên defend bằng data. Mình tự nhận lúc đầu suýt defend "tao thấy nó lặp lại nhiều mà" 
 
 ### Bài học về Rule / Workflow / Agent
 - **Rule đã âm thầm có sẵn** (pinned FAQ) và **đang fail** không phải vì Rule yếu, mà vì **discoverability + UX kém** (học viên không scroll). Workflow giải được phần đó (push proactive thay vì pull).
@@ -72,16 +63,3 @@ Ban đầu mình rất hứng "multi-agent system Q&A + Logistics + Analytics" v
 | **Đặt câu hỏi pitcher khác sớm hơn** | Mình đã challenge Tuấn và Linh OK, nhưng chỉ ở Phase 3. Nếu vào Phase 2 đã có challenge nhẹ thì nhóm có thể loại được #4, #5, #6 nhanh hơn. |
 
 ---
-
-## 5. Câu trả lời ngắn cho "Kiểm tra hiểu bài" (Phase 7 cá nhân)
-
-> *Tự test mình giải thích được mạch problem → workflow → metric → boundary → AI fit*
-
-- **Problem**: 4 TA / 500 hv, 65% câu hỏi là admin lặp lại, học viên đợi median 6h, ~27% từng bỏ task vì chờ.
-- **Workflow**: 7 bước (post → đợi → TA phân loại → TA trả lời / debug / escalate → follow-up). Bottleneck ở bước 2 (idle) + bước 4 (TA lặp).
-- **Metric**: 6 metric SMART, trọng tâm là (a) median wait admin 6h → 30', (b) % auto-resolve 0 → 50%, (c) TA time on repetitive 65% → < 25%.
-- **Boundary**: AI KHÔNG trả grade / deadline / exception; mọi câu có keyword grade-related → route TA; confidence < 0.75 → TA queue.
-- **AI fit**: 80% câu là low-complexity + low-ambiguity → Workflow là điểm cân bằng giữa Rule (yếu) và Agent (rủi ro). Decision Go small-pilot với kill criteria rõ.
-
----
-
