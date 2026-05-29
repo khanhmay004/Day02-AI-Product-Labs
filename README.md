@@ -4,6 +4,8 @@
 
 Bản nộp cho lab **Day 02 — Tìm Đúng Bài Toán Cho AI**.
 
+Link survey: https://docs.google.com/forms/d/e/1FAIpQLScKilz0F3xFdRY7mfYkSFvFA_o1nwQaL6y2GYAlQODyLTdr1w/alreadyresponded
+
 ## Cấu trúc
 
 | Phần | File | Nội dung |
@@ -14,7 +16,7 @@ Bản nộp cho lab **Day 02 — Tìm Đúng Bài Toán Cho AI**.
 
 ## Tóm tắt bài toán nhóm
 
-**Vấn đề**:
-**Tier chọn**: **Workflow** 
-**Quyết định**: **Go — Pilot 1 cohort, 10 tuần**.
+**Vấn đề**: Học viên gửi câu hỏi lỗi code/setup lên group chat thiếu context tối thiểu (traceback, code, file/cell, env, package version, bước đã thử) → TA phải hỏi lại nhiều vòng trước khi bắt đầu phân tích lỗi.
+**Tier chọn**: **Workflow + AI** (Rule làm nền/fallback; không Agent) — AI hỗ trợ intake: kiểm tra đủ context → hỏi lại đúng phần thiếu → phân loại lỗi → gợi ý khi có cơ sở, có guardrail confidence + HITL.
+**Quyết định**: **Not Yet → Go** sau khi đo baseline trên log chat lab thật (20–30 câu gần nhất). Nếu xác nhận ≥2 vòng hỏi lại/câu và ≥50% câu thiếu context lần đầu → chạy pilot 1 tuần; nếu không → rollback về Rule form thuần.
 
