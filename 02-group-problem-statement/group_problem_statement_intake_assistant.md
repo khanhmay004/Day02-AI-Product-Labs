@@ -1,7 +1,11 @@
 # Group Problem Statement — AI Intake Assistant cho lỗi code trong lab
 
-> **Group 3**:
+> **Group 3**
 Thành viên:   
+2A202600858 - Võ Huyền Khánh Mây
+2A202600910 - Vũ Quốc Tấn
+2A202600723 - Nguyễn Thị Vang
+2A202600883 - Phạm Mai Hạnh
 
 ---
 
@@ -98,14 +102,12 @@ Kết quả:
 
 | Nguồn | Số người / số mẫu | Tín hiệu xác nhận | Tín hiệu phản bác | Nhóm sửa problem thế nào |
 | :---- | ----: | :---- | :---- | :---- |
-| Interview (TA) | ⟪cần hỏi⟫ | ⟪vd: x/y TA xác nhận phải hỏi lại ≥2 vòng⟫ | ⟪vd: lỗi quá đa dạng, khó checklist hóa⟫ | ⟪vd: giới hạn phạm vi 5 loại lỗi phổ biến⟫ |
-| Survey / poll (học viên) | ⟪cần hỏi⟫ | ⟪cần điền⟫ | ⟪cần điền⟫ | ⟪cần điền⟫ |
+| Interview (TA) | 5 | 3/5 TA xác nhận phải hỏi lại ≥2 vòng | lỗi quá đa dạng, khó checklist hóa | giới hạn phạm vi 5 loại lỗi phổ biến|
+| Survey / poll (học viên) | 5 | 4/5 học viên xác nhận cần cung cấp thêm thông tin | ?? | ?? |
 
 Insight sau validation:
 
-⟪Giả thuyết cần xác nhận: pain thật không nằm ở "TA chậm", mà ở "câu hỏi đầu vào  
-thiếu context khiến vòng hỏi-đáp bị kéo dài". Nếu log xác nhận ≥2 vòng/câu thì giữ  
-nguyên hướng intake; nếu phần lớn câu đã đủ context thì thu hẹp sang phân loại/định tuyến.⟫
+Pain thật không nằm ở "TA chậm", mà ở "câu hỏi đầu vào thiếu context khiến vòng hỏi-đáp bị kéo dài". Đây là bottleneck chính cần giải quyết để cải thiện trải nghiệm lab, chứ không phải việc TA trả lời chậm hay thiếu nhiệt tình.
 
 ## Bước 4.2 — Research giải pháp đã có
 
